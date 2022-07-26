@@ -1,0 +1,22 @@
+.wrapper {
+  background: linear-gradient(
+      180deg,
+      #131317 -60.19%,
+      rgba(65, 66, 99, 0.09) 100%
+    ),
+    url(../../static/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

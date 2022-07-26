@@ -1,0 +1,55 @@
+.header {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 0px 35px;
+  font-size: 18px;
+  line-height: 21px;
+  border-bottom: 1px solid #adb8bd;
+}
+
+.nav {
+  flex: 1 1 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  flex: 1 1 60%;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 20px;
+}
+
+.sign {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signIn,
+.signUp,
+.search {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.signIn:hover,
+.signUp:hover,
+.search:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 30px 0px 50px;
+  position: relative;
+}
+
+.info {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.content {
+  flex: 0 0 50%;
+}
+
+.title {
+  margin: 0;
+  font-size: 96px;
+  line-height: 105px;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 42px;
+}
