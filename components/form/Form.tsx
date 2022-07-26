@@ -37,8 +37,6 @@ const Form = () => {
               values={accomodation}
               onChange={(value) => setAccomodation(value)}
               dropdownPosition="auto"
-              id="long-value-select"
-              instanceId="long-value-select"
             />
           </div>
 
