@@ -9,7 +9,7 @@ const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [returnDate, setReturnDate] = useState(new Date());
 
-  const accomArr = [
+  const accomArr: string | object[] = [
     { label: '6730 Luna Land North Rhiannonmouth', value: 1 },
     { label: '6731 Luna Land North Rhiannonmouth', value: 2 },
     { label: '6732 Luna Land North Rhiannonmouth', value: 3 },
@@ -21,8 +21,10 @@ const Form = () => {
     { label: '2 adults', value: 3 },
   ];
 
-  const [accomodation, setAccomodation] = useState([accomArr[0]]);
-  const [guests, setGuests] = useState([guestsArr[0]]);
+  const [accomodation, setAccomodation] = useState<(string | object)[]>([
+    accomArr[0],
+  ]);
+  const [guests, setGuests] = useState<(string | object)[]>([guestsArr[0]]);
 
   return (
     <div className={classes.formContainer}>
@@ -35,7 +37,7 @@ const Form = () => {
             <StyledSelect
               options={accomArr}
               values={accomodation}
-              onChange={(value) => setAccomodation(value)}
+              onChange={(values) => setAccomodation(values)}
               dropdownPosition="auto"
             />
           </div>
