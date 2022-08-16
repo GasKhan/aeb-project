@@ -15,10 +15,22 @@
   flex: 0 0 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    flex: 0 0 100%;
+  }
+}
+
 .title {
   margin: 0;
   font-size: 96px;
   line-height: 105px;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 46px;
+    line-height: 55px;
+  }
 }
 
 .text {
